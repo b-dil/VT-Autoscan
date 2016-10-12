@@ -15,8 +15,8 @@ def sendRequest(resource, apikey):
     return json
 
 def configParse():
-    '''parses the config file, vt.json'''
-    with open('vt.json', 'r') as confFile:
+    '''parses the config file, vt.conf'''
+    with open('vt.conf', 'r') as confFile:
         return json.load(confFile)
 
 def mongoGetQueue():
@@ -39,7 +39,7 @@ def main():
     try:
         conf = configParse()
     except IOError:
-        print 'vt.json configuration file not found'
+        print 'vt.conf configuration file not found'
         sys.exit()
     apikey = str(conf['apikey'])
     wait = str(conf['wait'])
