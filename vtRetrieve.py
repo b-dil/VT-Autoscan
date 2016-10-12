@@ -65,15 +65,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-'''notes:
-mongo - db name, table name
-install script
-mongodb user, security
-vt user
-change db name
-
-db design
-queue col
-done col
-'''
