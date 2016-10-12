@@ -10,3 +10,4 @@ To do:
 - Bash mongo setup script
 - Mongo security
 - Change vt.json to vt.conf...
+- Allow script to connect to remote dbs
