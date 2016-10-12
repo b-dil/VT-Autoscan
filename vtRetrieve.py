@@ -21,7 +21,6 @@ def configParse():
 
 def mongoGetQueue():
     '''gets scan_id of docs in queue collection'''
-    # change db name later
     client = MongoClient()
     db = client.vt
     queueDocs = db.queue.find()
@@ -30,7 +29,6 @@ def mongoGetQueue():
 
 def mongoQueueRemove(doc):
     '''removes document from queue, adds it to done collection'''
-    # change db name later
     client = MongoClient()
     db = client.vt
     db.done.insert_one(doc)

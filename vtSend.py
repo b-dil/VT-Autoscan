@@ -67,7 +67,6 @@ def configParse():
 
 def mongoInsert(doc):
     '''inserts document into mongodb'''
-    # change db name later
     client = MongoClient()
     db = client.vt
     db.queue.insert_one(doc)
