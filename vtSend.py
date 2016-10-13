@@ -71,8 +71,7 @@ def mongoInsert(doc):
     '''inserts document into mongodb'''
     client = MongoClient()
     db = client.vt
-    try:
-        db.queue.insert(doc)
+    db.queue.insert(doc)
     
 def main():
     #read config
