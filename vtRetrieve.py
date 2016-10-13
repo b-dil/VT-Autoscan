@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import json, yaml
 import urllib, urllib2
 import time
