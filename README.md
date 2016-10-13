@@ -10,3 +10,4 @@ To do:
 - Bash mongo setup script
 - Mongo security
 - Allow script to connect to remote dbs
+- Move scanned files to a separate directory
