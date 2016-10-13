@@ -31,7 +31,7 @@ def mongoQueueRemove(doc):
     '''removes document from queue, adds it to done collection'''
     client = MongoClient()
     db = client.vt
-    db.done.insert_one(doc)
+    db.done.insert(doc)
     db.queue.delete_many({'scan_id' : doc['scan_id']})
 
 def main():
